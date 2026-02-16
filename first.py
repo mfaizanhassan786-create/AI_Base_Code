@@ -71,10 +71,10 @@ else:
 print()
 
 
-# - Example 4: AI Grade Checker 
+# Example 4: AI Grade Checker 
 # AI checks your marks and tells your grade.
 
-print("--- Example 4: AI Grade Checker ---")
+print(" Example 4: AI Grade Checker ")
 
 marks = 75
 
@@ -92,18 +92,20 @@ else:
 print()
 
 
-# ---------- Example 5: AI Even/Odd Checker ----------
+# Example 5: AI Even/Odd Checker 
 # AI checks if a number is even or odd.
 
-print("--- Example 5: AI Even/Odd Checker ---")
+print(" Example 5: AI Even/Odd Checker ")
 
 numbers = [3, 8, 15, 22, 7]
 
 for num in numbers:
     if num % 2 == 0:
-        print(f"AI says: {num} is Even ✅")
+        print(f"AI says: {num} is Even ")
     else:
-        print(f"AI says: {num} is Odd 🔵")
+        print(f"AI says: {num} is Odd ")
 
 print()
-print("--- All 5 Examples Done! ---")
+print(" All 5 Examples Done! ")
+
+print("All Done!")
