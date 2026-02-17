@@ -92,3 +92,159 @@ else:
 print()
 
 
+# Example 5: AI Even/Odd Checker 
+# AI checks if a number is even or odd.
+
+print(" Example 5: AI Even/Odd Checker ")
+
+numbers = [3, 8, 15, 22, 7]
+
+for num in numbers:
+    if num % 2 == 0:
+        print(f"AI says: {num} is Even ")
+    else:
+        print(f"AI says: {num} is Odd ")
+
+print()
+print(" All 5 Examples Done! ")
+
+print("All Done!")
+
+
+
+#       5 Simple Examples of Loops
+
+# A loop means doing something again and again.
+# Just like in real life — you brush your teeth
+# EVERY day, you eat breakfast EVERY morning.
+# That's a loop! Let's see some examples. 👇
+
+
+
+# Example 1: Morning Routine ☀️
+# Every morning you do the same tasks — wake up,
+# brush teeth, take a shower, eat breakfast, go
+# to school/work. A for loop does them one by one.
+
+
+print("☀️ Example 1: My Morning Routine")
+print()
+
+morning_tasks = [
+    "Wake up from bed 🛏️",
+    "Brush my teeth 🪥",
+    "Take a shower 🚿",
+    "Eat breakfast 🍳",
+    "Go to school/work 🎒"
+]
+
+step = 1
+for task in morning_tasks:
+    print(f"  Step {step}: {task}")
+    step = step + 1
+
+print("  ✅ Morning routine done! Ready for the day!")
+print()
+
+
+# Example 2: Counting My Shopping Bill 🛒
+# You bought some items from a shop. Now you want
+# to add up the prices one by one — just like a
+# cashier does at the counter.
+
+print("🛒 Example 2: Counting My Shopping Bill")
+print()
+
+items = {
+    "Milk": 120,
+    "Bread": 80,
+    "Eggs": 200,
+    "Juice": 150,
+    "Biscuits": 50
+}
+
+total_bill = 0
+
+for item_name, price in items.items():
+    total_bill = total_bill + price
+    print(f"  🔹 {item_name} = Rs.{price}  (Running total: Rs.{total_bill})")
+
+print(f"  💰 Total Bill: Rs.{total_bill}")
+print()
+
+
+# Example 3: Studying for Exams 📚
+# You have 5 chapters to study. You study one
+# chapter at a time. After each chapter, you
+# check how many are left. When all are done,
+# you say "I'm ready for the exam!"
+
+print("📚 Example 3: Studying for Exams")
+print()
+
+chapters_left = 5
+
+while chapters_left > 0:
+    print(f"  📖 Studying chapter {6 - chapters_left}... ({chapters_left} left to go)")
+    chapters_left = chapters_left - 1
+
+print("  🎉 All chapters done! I'm ready for the exam!")
+print()
+
+
+# Example 4: Waiter Taking Orders 🍽️
+# A waiter goes table by table and takes each
+# person's order. At each table, he asks each
+# person what they want. This is like a loop
+# inside a loop (nested loop).
+
+print("🍽️ Example 4: Waiter Taking Orders")
+print()
+
+tables = ["Table 1", "Table 2", "Table 3"]
+people_at_table = ["Person A", "Person B"]
+
+for table in tables:
+    print(f"  📋 Waiter goes to {table}:")
+    for person in people_at_table:
+        print(f"      🗣️ '{person}, what would you like to order?'")
+    print(f"  ✅ {table} order taken!")
+    print()
+
+print("  🍽️ All orders taken! Kitchen is cooking now!")
+print()
+
+
+# Example 5: Looking for Lost Keys 🔑
+# You lost your keys! You check your pockets,
+# bag, table, sofa... one by one. The moment
+# you find them, you STOP looking (break).
+
+print("🔑 Example 5: Looking for My Lost Keys")
+print()
+
+places = [
+    "Pocket",
+    "Bag",
+    "Table",
+    "Sofa",        # <-- Keys are here!
+    "Bedroom",
+    "Kitchen"
+]
+
+keys_found = False
+
+for place in places:
+    print(f"  🔍 Checking {place}...")
+    if place == "Sofa":
+        print(f"  🎉 Found my keys on the {place}! No need to look further!")
+        keys_found = True
+        break  # stop looking, we found them!
+
+if not keys_found:
+    print("  😢 Couldn't find the keys anywhere...")
+
+print()
+print("=" * 45)
+print("  ✅ All 5 Loop Examples Done!")
+print("=" * 45)
