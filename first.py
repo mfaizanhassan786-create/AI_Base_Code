@@ -109,3 +109,6 @@ print()
 print(" All 5 Examples Done! ")
 
 print("All Done!")
+
+
+#Loop is used inthe Programming Language for the repeated execution of a block of code.
