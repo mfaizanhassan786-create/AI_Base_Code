@@ -192,59 +192,43 @@ print("  🎉 All chapters done! I'm ready for the exam!")
 print()
 
 
-# Example 4: Waiter Taking Orders 🍽️
-# A waiter goes table by table and takes each
-# person's order. At each table, he asks each
-# person what they want. This is like a loop
-# inside a loop (nested loop).
+# Example 4: Teacher Calling Names in Class 
+#
+# Imagine a teacher has 3 classes.
+# In EACH class, the teacher calls the name of
+# EVERY student to check attendance.
+#
+# So the teacher first goes to Class 1,
+#   calls Student 1, Student 2...
+# Then goes to Class 2,
+#   calls Student 1, Student 2...
+# And so on.
+#
+# This is a NESTED LOOP:
+#   Outer loop = goes class by class
+#   Inner loop = calls each student in that class
 
-print("🍽️ Example 4: Waiter Taking Orders")
+
+print(" Example 4: Teacher Calling Names")
 print()
 
-tables = ["Table 1", "Table 2", "Table 3"]
-people_at_table = ["Person A", "Person B"]
+# These are the classes
+classes = ["Class A", "Class B", "Class C"]
 
-for table in tables:
-    print(f"  📋 Waiter goes to {table}:")
-    for person in people_at_table:
-        print(f"      🗣️ '{person}, what would you like to order?'")
-    print(f"  ✅ {table} order taken!")
+# These are the students in each class
+students = ["Ali", "Sara", "Ahmed"]
+
+# Outer loop — teacher goes to each class
+for my_class in classes:
+    print(f"   Teacher enters {my_class}:")
+
+    # Inner loop — teacher calls each student
+    for student in students:
+        print(f"      '{student}! Are you here?'")
+
+    print(f"   {my_class} attendance done!")
     print()
 
-print("  🍽️ All orders taken! Kitchen is cooking now!")
+print("  All classes checked! Attendance complete!")
 print()
 
-
-# Example 5: Looking for Lost Keys 🔑
-# You lost your keys! You check your pockets,
-# bag, table, sofa... one by one. The moment
-# you find them, you STOP looking (break).
-
-print("🔑 Example 5: Looking for My Lost Keys")
-print()
-
-places = [
-    "Pocket",
-    "Bag",
-    "Table",
-    "Sofa",        # <-- Keys are here!
-    "Bedroom",
-    "Kitchen"
-]
-
-keys_found = False
-
-for place in places:
-    print(f"  🔍 Checking {place}...")
-    if place == "Sofa":
-        print(f"  🎉 Found my keys on the {place}! No need to look further!")
-        keys_found = True
-        break  # stop looking, we found them!
-
-if not keys_found:
-    print("  😢 Couldn't find the keys anywhere...")
-
-print()
-print("=" * 45)
-print("  ✅ All 5 Loop Examples Done!")
-print("=" * 45)
