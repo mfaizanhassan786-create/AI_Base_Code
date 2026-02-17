@@ -92,23 +92,3 @@ else:
 print()
 
 
-# Example 5: AI Even/Odd Checker 
-# AI checks if a number is even or odd.
-
-print(" Example 5: AI Even/Odd Checker ")
-
-numbers = [3, 8, 15, 22, 7]
-
-for num in numbers:
-    if num % 2 == 0:
-        print(f"AI says: {num} is Even ")
-    else:
-        print(f"AI says: {num} is Odd ")
-
-print()
-print(" All 5 Examples Done! ")
-
-print("All Done!")
-
-
-#Loop is used inthe Programming Language for the repeated execution of a block of code.
