@@ -232,3 +232,38 @@ for my_class in classes:
 print("  All classes checked! Attendance complete!")
 print()
 
+
+
+# Example 5: Looking for Lost Keys 🔑
+# You lost your keys! You check your pockets,
+# bag, table, sofa... one by one. The moment
+# you find them, you STOP looking (break).
+
+print("🔑 Example 5: Looking for My Lost Keys")
+print()
+
+places = [
+    "Pocket",
+    "Bag",
+    "Table",
+    "Sofa",        # <-- Keys are here!
+    "Bedroom",
+    "Kitchen"
+]
+
+keys_found = False
+
+for place in places:
+    print(f"   Checking {place}...")
+    if place == "Sofa":
+        print(f"  Found my keys on the {place}! No need to look further!")
+        keys_found = True
+        break  # stop looking, we found them!
+
+if not keys_found:
+    print("   Couldn't find the keys anywhere...")
+
+print()
+print("=" * 45)
+print("   All 5 Loop Examples Done!")
+print("=" * 45)
